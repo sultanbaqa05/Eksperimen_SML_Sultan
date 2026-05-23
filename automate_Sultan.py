@@ -216,9 +216,9 @@ def main():
     logger.info("=" * 60)
 
     # Paths
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    raw_data_path = os.path.join(base_dir, "data", "raw", "student_data.csv")
-    processed_dir = os.path.join(base_dir, "data", "processed")
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    raw_data_path = os.path.join(base_dir, "namadataset_raw", "student_data.csv")
+    processed_dir = os.path.join(base_dir, "preprocessing")
 
     # Step 1: Load data
     df = load_data(raw_data_path)
