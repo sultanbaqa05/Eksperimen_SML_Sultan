@@ -6,6 +6,7 @@ on:
     paths:
       - "namadataset_raw/**"
       - "automate_Sultan.py"
+      - "Eksperimen_Sultan.ipynb"
   pull_request:
     branches: [main]
   workflow_dispatch:
